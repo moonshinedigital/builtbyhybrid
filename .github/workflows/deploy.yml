@@ -14,8 +14,8 @@ on:
                 default: 'delta'
 
 jobs:
-    build-files:
-        name: 🏗️ Build
+    web-deploy:
+        name: 🎉 Deploy
         runs-on: ubuntu-latest
 
         steps:
@@ -33,14 +33,6 @@ jobs:
               run: |
                   npm install
                   npm run build
-
-    deploy:
-        name: 🎉 Deploy
-        runs-on: ubuntu-latest
-
-        needs: build-files
-
-        steps:
             - name: 📂 Sync files
               uses: milanmk/actions-file-deployer@master
               with:
@@ -48,5 +40,6 @@ jobs:
                   remote-host: ${{ secrets.SERVER }}
                   remote-user: ${{ secrets.USERNAME }}
                   ssh-private-key: ${{ secrets.KEY }}
+                  local-path: './build/'
                   remote-path: '/public_html/app/themes/moonbase'
                   sync-delta-excludes: '/*'
