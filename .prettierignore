@@ -1,0 +1,7 @@
+# Ignore production builds
+dist/**/*.css
+dist/**/*.js
+
+# Ignore minified JavaScript:
+*.min.js
+*.md

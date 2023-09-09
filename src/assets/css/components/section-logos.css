@@ -1,0 +1,11 @@
+.logos__heading {
+	@apply font-display text-center text-grey mb-4;
+}
+
+.logos__images {
+	@apply bg-white flex flex-row gap-x-12 gap-y-6 justify-center flex-wrap;
+}
+
+.logos__images img {
+	@apply h-24 object-contain;
+}

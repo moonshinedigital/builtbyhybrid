@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+/* Import custom base styles using @postcss-import-ext-glob */
+@import-glob "./base.css";
+@import-glob "./base/*.css";
+
+@import "tailwindcss/components";
+/* Import custom components using @postcss-import-ext-glob */
+@import-glob "./components/*.css";
+
+@import "tailwindcss/utilities";
+/* Import custom utilities using @postcss-import-ext-glob */
+@import-glob "./utilities/*.css";

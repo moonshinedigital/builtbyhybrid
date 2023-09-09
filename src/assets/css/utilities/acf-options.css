@@ -1,0 +1,65 @@
+/* ==========================================================================
+   STYLE AND DISPLAY OPTIONS FOR ACF
+   ========================================================================== */
+
+/* Section Modifiers 
+   ========================================================================== */
+
+.section--wrap {
+	@apply container;
+}
+
+.section--nowrap {
+}
+
+.section--nowrap > div {
+	@apply container py-12 lg:py-24;
+}
+
+.section--hidemobile {
+	@apply hidden lg:flex;
+}
+
+/* Section Styles 
+   ========================================================================== */
+
+/* WHITE - DEFAULT */
+
+.section--white {
+	@apply bg-white text-black;
+}
+.section--white .section__heading {
+	@apply text-purple;
+}
+.section--white .section__subheading {
+	@apply text-purple;
+}
+/* BLACK */
+
+.section--black {
+	@apply bg-black text-white;
+}
+.section--wrap.section--black {
+	@apply p-base;
+}
+.section--black .section__heading {
+	@apply text-white;
+}
+.section--black .section__subheading {
+	@apply text-yellow;
+}
+
+/* PURPLE */
+
+.section--purple {
+	@apply bg-purple text-white;
+}
+.section--wrap.section--purple {
+	@apply p-base;
+}
+.section--purple .section__heading {
+	@apply text-white;
+}
+.section--purple .section__subheading {
+	@apply text-yellow;
+}

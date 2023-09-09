@@ -1,0 +1,32 @@
+{
+	"root": true,
+	"ignorePatterns": ["*.min.js"],
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"extends": ["eslint:recommended", "prettier"],
+			"env": {
+				"browser": true
+			},
+			"parserOptions": {
+				"ecmaVersion": "latest"
+			}
+		},
+		{
+			"files": ["*.php", "*.html", ".css"],
+			"parser": "@angular-eslint/template-parser",
+			"plugins": ["tailwindcss"],
+			"extends": ["plugin:tailwindcss/recommended"],
+			"rules": {
+				"tailwindcss/no-custom-classname": "off",
+				"tailwindcss/enforces-shorthand": 1
+			},
+			"settings": {
+				"tailwindcss": {
+					"config": "./tailwind.config.js",
+					"cssFiles": ["./src/**/*.css"]
+				}
+			}
+		}
+	]
+}

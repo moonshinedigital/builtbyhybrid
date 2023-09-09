@@ -1,0 +1,40 @@
+/* ==========================================================================
+   PAGE HERO
+   ========================================================================== */
+
+body.page .hero {
+	@apply bg-black pb-4 xl:pb-0 xl:relative xl:h-[800px] xl:flex xl:items-center overflow-hidden;
+}
+
+body.page .hero__content {
+	@apply container xl:relative;
+	@apply lg:w-full;
+}
+
+body.page .hero__content h1 {
+	@apply text-white my-0 text-5xl  xl:max-w-[320px] 2xl:max-w-[540px];
+}
+
+body.page .hero__content h2 {
+	@apply text-purple mt-2 mb-4 text-3xl xl:max-w-[320px] 2xl:max-w-[540px];
+}
+
+body.page .hero__content p {
+	@apply text-white xl:max-w-[320px] 2xl:max-w-[540px];
+}
+
+body.page .hero__buttons {
+	@apply flex items-center gap-6 my-6;
+}
+
+body.page .hero__image {
+	@apply relative md:-mt-32 lg:-mt-40 xl:mt-0 xl:absolute xl:right-0 xl:mr-[-200px] 2xl:-mr-0;
+}
+
+body.page .hero__image img {
+	@apply h-full object-cover;
+}
+
+body.page .hero__image-overlay {
+	@apply bg-gradient-to-t xl:bg-gradient-to-r from-black from-5% via-black/20 via-20% to-black/0 to-40% absolute w-full h-full;
+}

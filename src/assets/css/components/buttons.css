@@ -1,0 +1,46 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+/* Buttons 
+   ========================================================================== */
+
+.button {
+	@apply rounded-md bg-yellow px-4 py-3 text-sm font-display uppercase text-black hover:bg-purple hover:text-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-white/20;
+	@apply inline-flex items-center gap-x-3;
+}
+.button svg {
+	@apply h-[14px] m-0 p-0 inline-block;
+}
+
+/* Call to Action 
+   ========================================================================== */
+
+.cta {
+	@apply max-w-xs inline-flex;
+	@apply transition-colors duration-300;
+}
+
+.cta__label {
+	@apply font-display uppercase font-extrabold border-l-2 border-b-2 leading-none;
+	@apply pb-2 pl-2;
+}
+
+.cta__icon {
+	@apply h-[14px] m-0 p-0 inline-block;
+}
+
+.section--white .cta {
+	@apply text-purple;
+	@apply hover:text-yellow;
+}
+
+.section--black .cta {
+	@apply text-white;
+	@apply hover:text-yellow;
+}
+
+.section--purple .cta {
+	@apply text-yellow;
+	@apply hover:text-white;
+}

@@ -1,0 +1,94 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+.font-display {
+	@apply font-extrabold italic uppercase;
+}
+
+/* Headings 
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	@apply font-display font-extrabold italic uppercase tracking-tight;
+}
+
+h1 {
+	@apply text-purple text-5xl leading-none mb-8;
+}
+
+h2 {
+	@apply text-purple text-4xl leading-none mb-4;
+}
+
+h3 {
+	@apply text-purple text-3xl leading-none mb-2;
+}
+
+h4 {
+	@apply text-purple text-2xl leading-none mb-2;
+}
+
+/* Paragraphs 
+   ========================================================================== */
+
+p {
+	@apply my-4 leading-normal;
+}
+p:first-of-type,
+p:last-of-type {
+	@apply my-0;
+}
+
+/* Wordpress Specific 
+   ========================================================================== */
+
+.page-title,
+.entry-title {
+	@apply text-3xl font-extrabold italic font-display;
+}
+
+.page-header,
+.entry-header {
+}
+
+.page-content,
+.entry-content {
+	@apply prose-lg max-w-none;
+}
+
+.page-footer,
+.entry-footer {
+	@apply flex flex-col;
+}
+
+/* Footer 
+   ========================================================================== */
+
+.copyright {
+	@apply text-sm font-bold;
+}
+.credit {
+	@apply font-display text-sm hover:text-yellow;
+}
+
+/* Section Specific 
+   ========================================================================== */
+
+.section__heading {
+	@apply mt-0 mb-2;
+}
+.section__subheading {
+	@apply my-0 normal-case;
+}
+
+.section__text {
+	@apply my-6;
+}
+
+.section__text p {
+	@apply my-4;
+}

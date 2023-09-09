@@ -1,0 +1,14 @@
+.section__col {
+	@apply flex flex-col lg:flex-row gap-8 lg:gap-16;
+}
+.section__col .col1 {
+	@apply order-1 lg:w-1/2;
+}
+.section__col .col2 {
+	@apply order-2 lg:w-1/2;
+}
+
+.col2 img,
+.col1 img {
+	@apply w-full;
+}

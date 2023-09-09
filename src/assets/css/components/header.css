@@ -1,0 +1,115 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+#mobile-header {
+	@apply top-0 z-40 gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden sticky flex items-center;
+}
+
+#btn-open {
+	@apply -m-2.5 p-2.5 text-dark lg:hidden;
+}
+
+/* Layout
+   ========================================================================== */
+
+#desktop-menu {
+	@apply lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col hidden;
+}
+
+#mobile-menu {
+	@apply z-50 transition-all duration-300 ease-in-out lg:hidden relative;
+}
+
+/* Content
+   ========================================================================== */
+
+#menu-content {
+	@apply grow bg-purple text-white flex flex-col overflow-y-auto p-10 lg:p-12 gap-y-8;
+}
+
+#menu-content .logo {
+	@apply flex flex-col items-center justify-center gap-y-2;
+}
+
+#menu-content .logo svg {
+	@apply h-[78px] w-[190px];
+}
+
+#menu-content .description {
+	@apply uppercase text-sm font-bold;
+}
+
+#menu-content > ul {
+	@apply flex flex-col py-6 lg:py-8 border-t-2 border-t-white gap-y-3 lg:gap-y-6;
+}
+
+#menu-content li {
+	@apply font-display text-xl leading-none uppercase;
+}
+
+/* States
+   ========================================================================== */
+
+[data-menu="inactive"] {
+	@apply opacity-0 invisible;
+}
+
+[data-menu="active"] {
+	@apply opacity-100 visible;
+}
+
+/* Mobile - Overlay
+   ========================================================================== */
+
+#mobile-menu-overlay {
+	@apply inset-0 bg-black/90 fixed;
+	@apply transition-opacity duration-300 ease-linear;
+}
+
+[data-menu="inactive"] #mobile-menu-overlay {
+	@apply opacity-0;
+}
+
+[data-menu="active"] #mobile-menu-overlay {
+	@apply opacity-100;
+}
+
+/* Buttons */
+
+#btn-close-wrapper {
+	@apply left-full top-0 w-16 pt-5 absolute flex justify-center;
+	@apply duration-300 ease-in-out;
+}
+
+[data-menu="inactive"] #btn-close-wrapper {
+	@apply opacity-0;
+}
+
+[data-menu="active"] #btn-close-wrapper {
+	@apply opacity-100;
+}
+
+#btn-close {
+	@apply -m-2.5 p-2.5;
+}
+
+/* Mobile - Drawer
+   ========================================================================== */
+
+#mobile-menu-drawer {
+	@apply mr-16 w-full max-w-xs flex-1 relative flex;
+	@apply transition duration-300 ease-in-out transform;
+}
+
+[data-menu="inactive"] #mobile-menu-drawer {
+	@apply -translate-x-full;
+}
+
+[data-menu="active"] #mobile-menu-drawer {
+	@apply translate-x-0;
+}
+
+#mobile-menu-wrapper {
+	@apply inset-0 fixed flex;
+}

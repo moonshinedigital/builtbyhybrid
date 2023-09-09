@@ -1,0 +1,30 @@
+### WordPress ###
+
+# Ignore dependencies from localwp
+/app/
+/conf/
+*.sql
+
+# Custom WordPress config files
+.htaccess
+wp-config.php
+
+### Project ###
+
+# Dependencies
+/node_modules/
+/vendor/
+*-lock.json
+*.lock
+
+# Logs
+logs
+*.log
+# Environment variables 
+.env
+
+# Build directories
+/dist/
+
+# Explicity includes
+!.vscode

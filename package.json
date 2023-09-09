@@ -1,0 +1,35 @@
+{
+	"name": "moonbase",
+	"version": "1.0.0",
+	"devDependencies": {
+		"@angular-eslint/template-parser": "^16.1.1",
+		"@tailwindcss/typography": "^0.5.9",
+		"@wordpress/prettier-config": "^2.22.0",
+		"archiver": "^6.0.1",
+		"autoprefixer": "^10.4.15",
+		"cssnano": "^6.0.1",
+		"esbuild": "^0.19.2",
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-tailwindcss": "^3.13.0",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+		"postcss": "^8.4.28",
+		"postcss-import-ext-glob": "^2.1.1",
+		"prettier": "^3.0.2",
+		"tailwindcss": "^3.3.3"
+	},
+	"scripts": {
+		"lint": "npx eslint ./src/ --fix && npx prettier --write .",
+		"watch:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./dist/assets/css/style.css --watch",
+		"watch:js": "esbuild ./src/assets/js/main.js --outdir=./dist/assets/js/ --out-extension:.js=.min.js --bundle --watch",
+		"watch:other": "onchange 'src/**/*' '!src/assets/css/**/*' '!src/assets/js/**/*' -- npm run build:other",
+		"watch": "npm run build:other && run-p watch:css watch:js watch:other",
+		"build:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./dist/assets/css/style.css --minify",
+		"build:js": "esbuild ./src/assets/js/main.js --outdir=./dist/assets/js --out-extension:.js=.min.js --bundle --minify",
+		"build:other": "rsync -av --delete --exclude assets/js/ --exclude assets/css/ src/ dist/",
+		"build": "run-s build:css build:js build:other && npm run package",
+		"package": "node node_scripts/theme-packager.js demonseazon.zip demonseazon"
+	},
+	"prettier": "@wordpress/prettier-config"
+}

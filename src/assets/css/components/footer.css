@@ -1,0 +1,45 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer__primary {
+	@apply flex flex-col items-center bg-black/60;
+	@apply py-8;
+}
+
+.footer__secondary {
+	@apply flex flex-col lg:flex-row items-center justify-between p-4 bg-black/60;
+}
+
+/* Social Links 
+   ========================================================================== */
+
+.footer__follow h3 {
+	@apply font-display text-white text-xl uppercase mb-4 p-0 leading-none;
+}
+
+.footer__follow-links {
+	@apply flex items-center justify-center space-x-4;
+}
+
+.footer__follow-links a {
+	@apply text-white hover:text-yellow;
+}
+
+.footer__follow-links svg {
+	@apply h-8 w-8;
+}
+
+/* Instagram Feed 
+   ========================================================================== */
+
+#soliloquy-container-386 {
+	@apply !h-fit;
+}
+
+#soliloquy-container-386 .soliloquy-item {
+	@apply bg-black;
+}
+#soliloquy-container-386 .soliloquy-item img {
+	@apply hover:opacity-40 transition-opacity duration-700;
+}
