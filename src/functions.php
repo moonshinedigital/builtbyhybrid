@@ -73,10 +73,3 @@ require get_template_directory() . '/inc/template-tags.php';
 
 // Custom clean up of unnessacary WordPress injections.
 require get_template_directory() . '/inc/template-cleaner.php';
-
-foreach ( glob( get_template_directory() . '/plugins/*.php' ) as $mb_plugins ) {
-	$disabled_path = get_template_directory() . '/plugins/disabled/';
-	if ( strpos( $mb_plugins, $disabled_path ) === false ) {
-		require $mb_plugins;
-	}
-}
