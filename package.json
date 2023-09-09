@@ -28,7 +28,7 @@
 		"build:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./build/assets/css/style.css --minify",
 		"build:js": "esbuild ./src/assets/js/main.js --outdir=./build/assets/js --out-extension:.js=.min.js --bundle --minify",
 		"build:other": "rsync -av --delete --exclude assets/js/ --exclude assets/css/ src/ build/",
-		"build": "run-s build:css build:js build:other && npm run package",
+		"build": "run-s build:css build:js build:other",
 		"package": "node node_scripts/theme-packager.js demonseazon.zip demonseazon"
 	},
 	"prettier": "@wordpress/prettier-config"

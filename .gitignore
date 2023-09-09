@@ -25,6 +25,7 @@ logs
 
 # Build directories
 /build/
+/*.zip
 
 # Explicity includes
 !.vscode
