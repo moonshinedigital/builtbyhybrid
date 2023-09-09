@@ -3,7 +3,6 @@
 - `cd into app/public/app/themes` and create a symlink.
 - `ln -s ~/Developer/projectname/dist projectname`
 - Will create a symlink called `projectname` within the themes directory that connects to the project `dist` directory.
-- Do the same for `wp-config.php` and `.htaccess`
 
 Ultra-minimal WordPress theme intended to be used as a base theme for client websites:
 
