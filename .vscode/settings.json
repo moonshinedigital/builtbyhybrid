@@ -1,15 +1,15 @@
 // Workspace settings
 {
 	"files.exclude": {
-		"**/.git": false,
-		"**/.github": false,
-		"**/node_modules": false,
-		"**/vendor": false,
-		"**/*.lock": false,
-		"**/*-lock.json": false,
-		"**/app/": false,
-		"**/logs/": false,
-		"**/conf/": false
+		"**/.git": true,
+		"**/.github": true,
+		"**/node_modules": true,
+		"**/vendor": true,
+		"**/*.lock": true,
+		"**/*-lock.json": true,
+		"**/app/": true,
+		"**/logs/": true,
+		"**/conf/": true
 	},
 	"search.exclude": {
 		"**/.git": true,
