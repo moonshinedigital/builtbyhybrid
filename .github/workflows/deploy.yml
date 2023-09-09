@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       sync:
-        description: "📂 Manually sync files"
+        description: "File synchronization"
         required: true
         default: "delta"
 
@@ -43,3 +43,5 @@ jobs:
         ssh-private-key: ${{ secrets.KEY }}
         local-path: "./build/"
         remote-path: "/public_html/app/themes/default"
+        sync: "full"
+        debug: true
