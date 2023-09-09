@@ -10,11 +10,11 @@
 		"php-stubs/wordpress-stubs": "^6.3"
 	},
 	"scripts": {
-		"php:lint": "vendor/bin/phpcs -p -s --ignore=*/app/,*/conf/,*/dist/",
-		"php:lint:errors": "vendor/bin/phpcs -p -s --runtime-set ignore_warnings_on_exit 1 --ignore=*/app/,*/conf/,*/dist/",
-		"php:lint:autofix": "vendor/bin/phpcbf --ignore=*/app/,*/conf/,*/dist/",
-		"php:lint:changed": "vendor/bin/phpcs-changed --git --git-unstaged --ignore=*/app/,*/conf/,*/dist/",
-		"make-pot": "wp i18n make-pot . ./dist/languages/moonbase.pot"
+		"php:lint": "vendor/bin/phpcs -p -s --ignore=*/app/,*/conf/,*/build/",
+		"php:lint:errors": "vendor/bin/phpcs -p -s --runtime-set ignore_warnings_on_exit 1 --ignore=*/app/,*/conf/,*/build/",
+		"php:lint:autofix": "vendor/bin/phpcbf --ignore=*/app/,*/conf/,*/build/",
+		"php:lint:changed": "vendor/bin/phpcs-changed --git --git-unstaged --ignore=*/app/,*/conf/,*/build/",
+		"make-pot": "wp i18n make-pot . ./build/languages/moonbase.pot"
 	},
 	"config": {
 		"allow-plugins": {

@@ -19,8 +19,8 @@ const output = fs.createWriteStream(zipFileName);
 // Pipe archive data to the output file.
 archive.pipe(output);
 
-// Add the folder with contents from the 'dist' directory.
-archive.directory('dist', folderName);
+// Add the folder with contents from the 'build' directory.
+archive.directory('build', folderName);
 
 // Finalize the archive and close the output file.
 archive.finalize();

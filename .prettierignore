@@ -1,6 +1,6 @@
 # Ignore production builds
-dist/**/*.css
-dist/**/*.js
+build/**/*.css
+build/**/*.js
 
 # Ignore minified JavaScript:
 *.min.js

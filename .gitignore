@@ -24,7 +24,7 @@ logs
 .env
 
 # Build directories
-/dist/
+/build/
 
 # Explicity includes
 !.vscode

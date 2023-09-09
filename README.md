@@ -1,8 +1,8 @@
 # Moonbase Wordpress Theme
 
 - `cd into app/public/app/themes` and create a symlink.
-- `ln -s ~/Developer/projectname/dist projectname`
-- Will create a symlink called `projectname` within the themes directory that connects to the project `dist` directory.
+- `ln -s ~/Developer/projectname/build projectname`
+- Will create a symlink called `projectname` within the themes directory that connects to the project `build` directory.
 
 Ultra-minimal WordPress theme intended to be used as a base theme for client websites:
 
@@ -42,5 +42,5 @@ npm install
 - `composer make-pot` : generates a .pot file in the `languages/` directory.
 - `npm run start` : watches all style and javascript files and recompiles them when they change.
 - `npm run lint` : checks all files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/) and [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run dev` : builds and minifies all development files into the `theme` directory for distribution.
-- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+- `npm run dev` : builds and minifies all development files into the `theme` directory for buildribution.
+- `npm run bundle` : generates a .zip archive for buildribution, excluding development and system files.

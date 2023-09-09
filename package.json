@@ -21,13 +21,13 @@
 	},
 	"scripts": {
 		"lint": "npx eslint ./src/ --fix && npx prettier --write .",
-		"watch:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./dist/assets/css/style.css --watch",
-		"watch:js": "esbuild ./src/assets/js/main.js --outdir=./dist/assets/js/ --out-extension:.js=.min.js --bundle --watch",
+		"watch:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./build/assets/css/style.css --watch",
+		"watch:js": "esbuild ./src/assets/js/main.js --outdir=./build/assets/js/ --out-extension:.js=.min.js --bundle --watch",
 		"watch:other": "onchange 'src/**/*' '!src/assets/css/**/*' '!src/assets/js/**/*' -- npm run build:other",
 		"watch": "npm run build:other && run-p watch:css watch:js watch:other",
-		"build:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./dist/assets/css/style.css --minify",
-		"build:js": "esbuild ./src/assets/js/main.js --outdir=./dist/assets/js --out-extension:.js=.min.js --bundle --minify",
-		"build:other": "rsync -av --delete --exclude assets/js/ --exclude assets/css/ src/ dist/",
+		"build:css": "tailwindcss --postcss -i ./src/assets/css/index.css -o ./build/assets/css/style.css --minify",
+		"build:js": "esbuild ./src/assets/js/main.js --outdir=./build/assets/js --out-extension:.js=.min.js --bundle --minify",
+		"build:other": "rsync -av --delete --exclude assets/js/ --exclude assets/css/ src/ build/",
 		"build": "run-s build:css build:js build:other && npm run package",
 		"package": "node node_scripts/theme-packager.js demonseazon.zip demonseazon"
 	},

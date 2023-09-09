@@ -20,6 +20,7 @@
 		"**/*-lock.json": true,
 		"**/app/": true,
 		"**/logs/": true,
-		"**/conf/": true
+		"**/conf/": true,
+		"**/build/": true
 	}
 }
