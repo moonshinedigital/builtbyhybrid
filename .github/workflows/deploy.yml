@@ -41,5 +41,6 @@ jobs:
                   remote-host: ${{ secrets.SERVER }}
                   remote-user: ${{ secrets.USERNAME }}
                   ssh-private-key: ${{ secrets.KEY }}
-                  local-path: './build/'
+                  local-path: './build/*'
                   remote-path: '/public_html/app/themes/moonbase'
+                  sync-delta-excludes: '/*'
