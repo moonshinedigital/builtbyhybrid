@@ -42,4 +42,4 @@ jobs:
                   remote-user: ${{ secrets.USERNAME }}
                   ssh-private-key: ${{ secrets.KEY }}
                   local-path: './build/'
-                  remote-path: '/public_html/app/themes/demonseazon'
+                  remote-path: '/public_html/app/themes/moonbase'

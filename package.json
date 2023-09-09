@@ -29,7 +29,7 @@
 		"build:js": "esbuild ./src/assets/js/main.js --outdir=./build/assets/js --out-extension:.js=.min.js --bundle --minify",
 		"build:other": "rsync -av --delete --exclude assets/js/ --exclude assets/css/ src/ build/",
 		"build": "run-s build:css build:js build:other",
-		"package": "node node_scripts/theme-packager.js demonseazon.zip demonseazon"
+		"package": "node node_scripts/theme-packager.js moonbase.zip moonbase"
 	},
 	"prettier": "@wordpress/prettier-config"
 }
