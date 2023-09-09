@@ -33,7 +33,6 @@ jobs:
               run: |
                   npm install
                   npm run build
-
             - name: 📂 Sync files
               uses: milanmk/actions-file-deployer@master
               with:
@@ -43,3 +42,4 @@ jobs:
                   ssh-private-key: ${{ secrets.KEY }}
                   local-path: './build/'
                   remote-path: '/public_html/app/themes/moonbase'
+                  sync-delta-excludes: './* !./build/*/**'
