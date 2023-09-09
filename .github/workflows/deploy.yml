@@ -4,6 +4,8 @@ on:
     push:
         branches:
             - main
+        paths:
+            - 'src/**'
 
     # Enables manually triggering of Workflow with file synchronization option
     workflow_dispatch:
