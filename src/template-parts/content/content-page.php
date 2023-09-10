@@ -9,7 +9,6 @@
 
 ?>
 
-<section class="section--wrap section--white">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-header">
@@ -22,7 +21,7 @@
 		?>
 	</div>
 
-	<?php mb_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -60,4 +59,3 @@
 	<?php endif; ?>
 
 </article>
-</section>

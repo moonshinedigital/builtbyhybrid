@@ -34,9 +34,6 @@ get_header();
 			// End the loop.
 		endwhile;
 
-		// Previous/next page navigation.
-		mb_the_posts_navigation();
-
 	else :
 
 		// If no content is found, get the `content-none` template part.

@@ -14,10 +14,10 @@ body > footer {
 	@apply bg-[url('../images/fitness-001.jpg')] bg-cover;
 }
 
-main > section {
+main > section.section {
 	@apply my-12 lg:my-24;
 }
 
-main > section:last-of-type {
+main > section.section:last-of-type {
 	@apply mb-0;
 }

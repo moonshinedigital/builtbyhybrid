@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-<?php get_template_part( 'template-parts/components/hero', 'home' ); ?>
+<?php get_template_part( 'template-parts/components/hero', 'page' ); ?>
 
 	<?php
 

@@ -24,7 +24,7 @@
 		?>
 	</div>
 
-	<?php mb_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

@@ -15,12 +15,14 @@ $subheading = get_field( 'subheading' );
 $text       = get_field( 'text' );
 $button     = get_field( 'link' );
 $image      = get_field( 'image' );
+$background = get_field( 'background' );
 ?>
 <?php 
 if ( ! empty( $heading ) || ! empty( $text ) ) :
 	; 
 	?>
-	<section class="hero-home">
+
+	<section class="hero-page">
 
 	<?php if ( ! empty( $image ) ) : ?>
 		<div class="hero__image"> 

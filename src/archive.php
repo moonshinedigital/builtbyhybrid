@@ -6,7 +6,7 @@
  *
  * @package Moonbase
  */
- 
+
 get_header();
 ?>
 
@@ -26,9 +26,6 @@ get_header();
 
 			// End the loop.
 		endwhile;
-
-		// Previous/next page navigation.
-		mb_the_posts_navigation();
 
 	else :
 
