@@ -2,13 +2,26 @@
    FOOTER
    ========================================================================== */
 
-.footer__primary {
-	@apply flex flex-col items-center bg-black/60;
+footer {
+	@apply bg-black relative z-0;
+}
+
+footer .background {
+	@apply h-full w-full absolute top-0 opacity-40 -z-10;
+	@apply bg-[url('/app/themes/moonbase/assets/images/fitness-001.jpg')] bg-cover;
+}
+
+.footer__top {
+	@apply flex flex-col items-center;
 	@apply py-8;
 }
 
-.footer__secondary {
-	@apply flex flex-col lg:flex-row items-center justify-between p-4 bg-black/60;
+.footer__mid {
+	@apply flex m-0 p-0;
+}
+
+.footer__last {
+	@apply flex flex-col lg:flex-row items-center justify-between p-4;
 }
 
 /* Social Links 
@@ -42,4 +55,8 @@
 }
 #soliloquy-container-386 .soliloquy-item img {
 	@apply hover:opacity-40 transition-opacity duration-700;
+}
+
+.footer__mid section {
+	@apply self-stretch lg:mx-12;
 }

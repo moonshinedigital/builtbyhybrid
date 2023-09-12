@@ -72,6 +72,8 @@ function mb_remove_css_attributes( $var ) {
 			'single-post',
 			'archive',
 			'current_page_item',
+			'prose',
+			'lg:prose-lg',
 		)
 	) : '';
 
@@ -88,3 +90,20 @@ add_filter( 'page_css_class', 'mb_remove_css_attributes', 100, 1 );
 add_filter( 'body_class', 'mb_remove_css_attributes', 100, 1 );
 // Classes in the post.
 add_filter( 'post_class', 'mb_remove_css_attributes', 100, 1 );
+
+/**
+ * Redirect attachment permalinks.
+ */
+function mb_redirect_attachment_page() {
+	if ( is_attachment() ) {
+		global $post;
+		if ( $post && $post->post_parent ) {
+			wp_safe_redirect( esc_url( get_permalink( $post->post_parent ) ), 301 );
+			exit;
+		} else {
+			wp_safe_redirect( esc_url( home_url( '/' ) ), 301 );
+			exit;
+		}
+	}
+}
+add_action( 'template_redirect', 'mb_redirect_attachment_page' );

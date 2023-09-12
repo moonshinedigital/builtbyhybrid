@@ -12,3 +12,7 @@
 .col1 img {
 	@apply w-full;
 }
+
+.section__col {
+	/* @apply prose lg:prose-lg; */
+}

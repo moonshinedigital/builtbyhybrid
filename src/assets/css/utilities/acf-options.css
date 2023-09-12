@@ -6,14 +6,16 @@
    ========================================================================== */
 
 .section--wrap {
-	@apply container;
+	@apply container my-20 lg:my-40;
 }
 
 .section--nowrap {
+	@apply py-20 my-20 lg:my-40;
+	/* @apply my-20 lg:my-40 p-base; */
 }
 
 .section--nowrap > div {
-	@apply container py-12 lg:py-24;
+	@apply container;
 }
 
 .section--hidemobile {
@@ -34,13 +36,18 @@
 .section--white .section__subheading {
 	@apply text-purple;
 }
+
+.section--nowrap.section--white {
+	@apply py-0;
+}
+
 /* BLACK */
 
 .section--black {
 	@apply bg-black text-white;
 }
 .section--wrap.section--black {
-	@apply p-base;
+	/* @apply p-base; */
 }
 .section--black .section__heading {
 	@apply text-white;
@@ -55,7 +62,7 @@
 	@apply bg-purple text-white;
 }
 .section--wrap.section--purple {
-	@apply p-base;
+	/* @apply p-base; */
 }
 .section--purple .section__heading {
 	@apply text-white;

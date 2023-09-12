@@ -18,21 +18,21 @@ get_header();
 <?php get_template_part( 'template-parts/components/hero', 'page' ); ?>
 
 	<?php
+	if ( have_posts() ) : // Check if there are posts to display.
 
-	/* Start the Loop */
-	while ( have_posts() ) :
-		the_post();
+		/* Start the Loop */
+		while ( have_posts() ) :
+			the_post();
 
-		get_template_part( 'template-parts/content/content', 'page' );
+			if ( ! empty( get_the_content() ) ) { // Check if post content is not empty.
+				get_template_part( 'template-parts/content/content', 'page' );
+			}
 
-		// If comments are open, or we have at least one comment, load
-		// the comment template.
-		if ( comments_open() || get_comments_number() ) {
-			comments_template();
-		}
+		endwhile; // End of the loop.
 
-	endwhile; // End of the loop.
+	endif; // End of the conditional check for posts.
 	?>
+
 
 	<?php 
 	if ( have_rows( 'section' ) ) :

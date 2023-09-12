@@ -11,20 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="title">', '</h2>' ); ?>
 
-		<?php if ( ! is_page() ) : ?>
+		<?php the_post_thumbnail(); ?>
 
-		<div class="entry-meta">
-			<?php mb_entry_meta(); ?>
-		</div>
-		<?php endif; ?>
-	</div>
-
-	<?php the_post_thumbnail(); ?>
-
-	<div class="entry-content">
 		<?php
 		the_content(
 			sprintf(
@@ -48,10 +38,5 @@
 			)
 		);
 		?>
-	</div>
-
-	<div class="entry-footer">
-		<?php mb_entry_footer(); ?>
-	</div>
 
 </article>

@@ -11,22 +11,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-header">
 		<?php
 		if ( is_sticky() && is_home() && ! is_paged() ) {
 			printf( '<span">%s</span>', esc_html_x( 'Featured', 'post', 'moonbase' ) );
 		}
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h2 class="title">', '</h2>' );
 		else :
-			the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+			the_title( sprintf( '<h2 class="title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 		endif;
 		?>
-	</div>
 
 	<?php the_post_thumbnail(); ?>
 
-	<div class="entry-content">
 		<?php
 		the_content();
 
@@ -37,10 +34,4 @@
 			)
 		);
 		?>
-	</div>
-
-	<div class="entry-footer">
-		<?php mb_entry_footer(); ?>
-	</div>
-
 </article>

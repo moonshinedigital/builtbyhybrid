@@ -46,23 +46,12 @@ p:last-of-type {
 /* Wordpress Specific 
    ========================================================================== */
 
-.page-title,
-.entry-title {
-	@apply text-3xl font-extrabold italic font-display;
+.title {
+	@apply text-4xl font-extrabold italic font-display;
 }
 
-.page-header,
-.entry-header {
-}
-
-.page-content,
-.entry-content {
-	@apply prose-lg max-w-none;
-}
-
-.page-footer,
-.entry-footer {
-	@apply flex flex-col;
+.content {
+	@apply prose lg:prose-lg max-w-none;
 }
 
 /* Footer 

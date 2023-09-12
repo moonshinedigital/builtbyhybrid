@@ -11,13 +11,30 @@ body > main {
 
 body > footer {
 	@apply mt-auto lg:ml-72 text-white;
-	@apply bg-[url('../images/fitness-001.jpg')] bg-cover;
 }
 
 main > section.section {
-	@apply my-12 lg:my-24;
+	/* @apply my-12 lg:my-40; */
 }
 
 main > section.section:last-of-type {
-	@apply mb-0;
+	/* @apply mb-0; */
+}
+
+article.page {
+	@apply my-12 lg:my-24 container;
+}
+
+img.alignright {
+	@apply w-full sm:float-right sm:w-fit;
+}
+
+img.alignleft {
+	@apply w-full sm:float-left sm:w-fit;
+}
+img.aligncenter {
+	@apply w-fit mx-auto;
+}
+img.alignnone {
+	@apply mx-0 inline;
 }

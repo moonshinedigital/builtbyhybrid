@@ -41,7 +41,7 @@
 }
 
 #menu-content > ul {
-	@apply flex flex-col py-6 lg:py-8 border-t-2 border-t-white gap-y-3 lg:gap-y-6;
+	@apply flex flex-col pt-12 lg:pt-12 pb-6 lg:pb-8 border-t-2 border-t-white gap-y-6 lg:gap-y-8;
 }
 
 #menu-content li {

@@ -71,6 +71,23 @@ if ( ! function_exists( 'mb_setup' ) ) {
 		// Remove robot inclusion of max-image-preview.
 		remove_filter( 'wp_robots', 'wp_robots_max_image_preview_large', 10 );
 
+		// Remove default image sizes.
+		remove_image_size( 'medium_large' );
+		remove_image_size( '1536x1536' );
+		remove_image_size( '2048x2048' );
+
+		// Change default image sizes.
+		update_option( 'thumbnail_size_w', 128 );
+		update_option( 'thumbnail_size_h', 128 );
+		update_option( 'medium_size_w', 768 );
+		update_option( 'medium_size_h', 768 );
+		update_option( 'large_size_w', 1024 );
+		update_option( 'large_size_h', 1024 );
+
+		// Add custom image sizes.
+		add_image_size( 'small', 320 );
+		add_image_size( 'extra_large', 2048 );
+
 		// Register custom post types.
 		require get_template_directory() . '/inc/register-post-types.php';
 		// Register custom navigation menus.
@@ -80,6 +97,26 @@ if ( ! function_exists( 'mb_setup' ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'mb_setup' );
+
+/**
+ * Add custom image sizes to admin.
+ * 
+ * @param array $sizes image sizes.
+ */
+function mb_custom_sizes( $sizes ) {
+	return array_merge(
+		$sizes,
+		array(
+			'small'       => __( 'Small', 'moonbase' ),
+			'extra_large' => __( 'Extra Large', 'moonbase' ),
+		) 
+	);
+}
+add_filter( 'image_size_names_choose', 'mb_custom_sizes' );
+
+
+// Disable scaled image size.
+add_filter( 'big_image_size_threshold', '__return_false' );
 
 /**
  * Enqueue scripts and styles.

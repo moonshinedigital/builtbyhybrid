@@ -4,7 +4,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-	content: ['./src/**/*.{html,js,php}'],
+	content: ['./src/**/*.{html,js,php}', './build/**/*.{html,js,php}'],
 	corePlugins: {
 		container: false,
 	},
@@ -72,6 +72,45 @@ module.exports = {
 				sans: ['Poppins', ...defaultTheme.fontFamily.sans],
 				display: ['Montserrat', ...defaultTheme.fontFamily.sans],
 			},
+			typography: ({ theme }) => ({
+				DEFAULT: {
+					css: {
+						'--tw-prose-body': theme('colors.dark'),
+						'--tw-prose-headings': theme('colors.purple'),
+						'--tw-prose-lead': theme('colors.dark'),
+						'--tw-prose-links': theme('colors.purple'),
+						'--tw-prose-bold': theme('colors.dark'),
+						'--tw-prose-counters': theme('colors.dark'),
+						'--tw-prose-bullets': theme('colors.purple'),
+						'--tw-prose-hr': theme('colors.purple'),
+						'--tw-prose-quotes': theme('colors.purple'),
+						'--tw-prose-quote-borders': theme('colors.purple'),
+						'--tw-prose-captions': theme('colors.dark'),
+						'--tw-prose-code': theme('colors.dark'),
+						'--tw-prose-pre-code': theme('colors.dark'),
+						'--tw-prose-pre-bg': theme('colors.dark'),
+						'--tw-prose-th-borders': theme('colors.purple'),
+						'--tw-prose-td-borders': theme('colors.purple'),
+						'--tw-prose-invert-body': theme('colors.white'),
+						'--tw-prose-invert-headings': theme('colors.yellow'),
+						'--tw-prose-invert-lead': theme('colors.dark'),
+						'--tw-prose-invert-links': theme('colors.white'),
+						'--tw-prose-invert-bold': theme('colors.white'),
+						'--tw-prose-invert-counters': theme('colors.dark'),
+						'--tw-prose-invert-bullets': theme('colors.dark'),
+						'--tw-prose-invert-hr': theme('colors.dark'),
+						'--tw-prose-invert-quotes': theme('colors.purple'),
+						'--tw-prose-invert-quote-borders':
+							theme('colors.purple'),
+						'--tw-prose-invert-captions': theme('colors.dark'),
+						'--tw-prose-invert-code': theme('colors.white'),
+						'--tw-prose-invert-pre-code': theme('colors.dark'),
+						'--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+						'--tw-prose-invert-th-borders': theme('colors.dark'),
+						'--tw-prose-invert-td-borders': theme('colors.dark'),
+					},
+				},
+			}),
 		},
 	},
 };
