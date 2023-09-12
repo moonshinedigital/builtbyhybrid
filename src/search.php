@@ -15,12 +15,11 @@ get_header();
 	<?php if ( have_posts() ) : ?>
 
 		<?php
-			printf(
-				/* translators: 1: search result title. 2: search term. */
-				'<h2 class="page-title">%1$s <span>%2$s</span></h2>',
-				esc_html__( 'Search results for:', 'moonbase' ),
-				get_search_query()
-			);
+		printf(
+			'<h2 class="page-title">%1$s <span>%2$s</span></h2>',
+			'Search results for:',
+			get_search_query()
+		);
 		?>
 
 		<?php

@@ -4,7 +4,6 @@
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"sirbrillig/phpcs-changed": "^2.10",
 		"sirbrillig/phpcs-variable-analysis": "^2.11",
-		"wp-cli/i18n-command": "^2.4",
 		"wp-coding-standards/wpcs": "^2.3",
 		"php-stubs/acf-pro-stubs": "^6.1",
 		"php-stubs/wordpress-stubs": "^6.3"
@@ -13,8 +12,7 @@
 		"php:lint": "vendor/bin/phpcs -p -s --ignore=*/app/,*/conf/,*/build/",
 		"php:lint:errors": "vendor/bin/phpcs -p -s --runtime-set ignore_warnings_on_exit 1 --ignore=*/app/,*/conf/,*/build/",
 		"php:lint:autofix": "vendor/bin/phpcbf --ignore=*/app/,*/conf/,*/build/",
-		"php:lint:changed": "vendor/bin/phpcs-changed --git --git-unstaged --ignore=*/app/,*/conf/,*/build/",
-		"make-pot": "wp i18n make-pot . ./build/languages/moonbase.pot"
+		"php:lint:changed": "vendor/bin/phpcs-changed --git --git-unstaged --ignore=*/app/,*/conf/,*/build/"
 	},
 	"config": {
 		"allow-plugins": {

@@ -14,9 +14,9 @@ function mb_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer', 'moonbase' ),
+			'name'          => 'Footer',
 			'id'            => 'footer-widgets',
-			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'moonbase' ),
+			'description'   => 'Add widgets here to appear in your footer.',
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

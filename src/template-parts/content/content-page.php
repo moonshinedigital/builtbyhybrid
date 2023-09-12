@@ -18,7 +18,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div>' . __( 'Pages:', 'moonbase' ),
+				'before' => '<div>Pages:',
 				'after'  => '</div>',
 			)
 		);

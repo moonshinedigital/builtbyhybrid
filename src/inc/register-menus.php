@@ -9,12 +9,12 @@
 
 register_nav_menus(
 	array(
-		'primary_menu' => __( 'Primary', 'moonbase' ),
+		'primary_menu' => 'Primary',
 	)
 );
 
 /**
- * Create a fallback menu must be added to fallback_cb on menu calls.
+ * Create a fallback menu that must be added to fallback_cb on menu calls.
  */
 function mb_default_menu() {
 	// Needs to be wrapped in a ul.

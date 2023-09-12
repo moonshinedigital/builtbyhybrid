@@ -13,8 +13,6 @@ if ( ! function_exists( 'mb_setup' ) ) {
 	 * Sets up theme defaults, registers or removes support for various WordPress features.
 	 */
 	function mb_setup() {
-		// Make theme available for translation, fill in the /languages/ directory.
-		load_theme_textdomain( 'moonbase', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -107,9 +105,9 @@ function mb_custom_sizes( $sizes ) {
 	return array_merge(
 		$sizes,
 		array(
-			'small'       => __( 'Small', 'moonbase' ),
-			'extra_large' => __( 'Extra Large', 'moonbase' ),
-		) 
+			'small'       => 'Small',
+			'extra_large' => 'Extra Large',
+		)
 	);
 }
 add_filter( 'image_size_names_choose', 'mb_custom_sizes' );

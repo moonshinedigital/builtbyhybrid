@@ -13,7 +13,7 @@
 
 		<?php
 		if ( is_sticky() && is_home() && ! is_paged() ) {
-			printf( '<span">%s</span>', esc_html_x( 'Featured', 'post', 'moonbase' ) );
+			echo '<span>Featured</span>';
 		}
 		if ( is_singular() ) :
 			the_title( '<h2 class="title">', '</h2>' );
@@ -29,9 +29,10 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div>' . __( 'Pages:', 'moonbase' ),
+				'before' => '<div>Pages:',
 				'after'  => '</div>',
 			)
 		);
+
 		?>
 </article>
