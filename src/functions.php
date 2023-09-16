@@ -127,3 +127,9 @@ add_action( 'wp_enqueue_scripts', 'mb_load_assets' );
 
 // Enhance the theme by hooking into WordPress.
 require get_template_directory() . '/inc/custom-functions.php';
+
+// Customise the admin menu.
+require get_template_directory() . '/inc/custom-menu-visibility.php';
+
+// ACF.
+require get_template_directory() . '/inc/custom-acf-fields.php';

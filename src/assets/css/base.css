@@ -11,5 +11,5 @@ html {
 }
 
 body {
-	@apply h-full flex flex-col antialiased bg-white text-black text-lg;
+	@apply h-full flex flex-col antialiased bg-white text-dark text-lg;
 }

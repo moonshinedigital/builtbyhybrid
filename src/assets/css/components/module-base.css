@@ -1,0 +1,92 @@
+/* ==========================================================================
+   BASE MODULE
+   ========================================================================== */
+
+/* Common Module */
+.module {
+	@apply prose xl:prose-lg max-w-none;
+	@apply my-16 xl:my-24;
+}
+
+/* Wrapped & Full-Width Modules */
+.module.min {
+	@apply container p-8 xl:p-12;
+}
+
+.module.max {
+	@apply py-14 xl:py-20 my-0;
+}
+
+/* Module Variants */
+.module.min.base-white,
+.module.max.base-white {
+	@apply p-0 my-16 xl:my-24;
+}
+
+.module.max.base-black:last-child,
+.module.max.base-purple:last-child {
+	@apply !mb-0;
+}
+
+.module.max > div {
+	@apply container;
+}
+
+/* ==========================================================================
+   COLUMNS
+   ========================================================================== */
+
+.columns {
+	@apply flex flex-col xl:flex-row gap-8 xl:gap-16;
+}
+
+.module.max.columns {
+	@apply xl:p-0 xl:m-0;
+}
+
+.columns.base-white {
+	@apply my-16 xl:my-24;
+}
+
+/* Column Sizing */
+.column-one {
+	@apply order-1 xl:w-1/2;
+}
+
+.column-two {
+	@apply order-2 xl:w-1/2;
+}
+
+.contact .column-one {
+	@apply order-2 xl:order-1;
+}
+
+.contact .column-two {
+	@apply order-1 xl:order-2;
+}
+
+/* Column Images */
+.column-one img,
+.column-two img {
+	@apply w-full m-0 p-0;
+}
+
+/* Full Width Images */
+.max .column-one img,
+.max .column-two img {
+	@apply w-full h-full object-cover m-0 p-0;
+}
+
+/* Full-Width Padding */
+.max .column-one > div,
+.max .column-two > div {
+	@apply xl:pt-20 xl:pb-20;
+}
+
+.max .column-one > div {
+	@apply xl:pl-20;
+}
+
+.max .column-two > div {
+	@apply xl:pr-20;
+}

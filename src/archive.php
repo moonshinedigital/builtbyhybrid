@@ -14,9 +14,7 @@ get_header();
 
 	<?php if ( have_posts() ) : ?>
 
-	<div class="page-header">
-		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-	</div>
+		<?php the_archive_title( '<h1>', '</h1>' ); ?>
 
 		<?php
 		// Start the Loop.

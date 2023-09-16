@@ -1,0 +1,65 @@
+/* ==========================================================================
+   CONTACT FORM 7
+   ========================================================================== */
+
+/* Common Form Wrapper */
+.wpcf7 {
+	@apply relative;
+}
+
+/* Control label */
+.wpcf7 label {
+	@apply inline-flex items-center h-8;
+	@apply relative w-full;
+	@apply font-display text-sm;
+}
+
+/* Control error message */
+.wpcf7 .wpcf7-not-valid-tip {
+	@apply inline-flex items-center h-8;
+	@apply absolute right-0 -top-8;
+	@apply text-sm text-orange;
+}
+
+/* Form control wrapper */
+.wpcf7 .wpcf7-form-control-wrap {
+	@apply relative flex flex-col text-right;
+	@apply mb-2;
+}
+
+/* Form control */
+.wpcf7 .wpcf7-form-control {
+	@apply order-2 w-full min-h-[24px];
+	@apply text-dark text-base;
+	@apply rounded-md border-0 py-2 text-dark/90 shadow-sm ring-1 ring-inset ring-grey placeholder:text-dark/40 focus:ring-2 focus:ring-inset focus:ring-purple sm:text-sm sm:leading-6;
+}
+
+/* Control when invalid */
+.wpcf7-not-valid {
+	@apply !ring-orange focus:!ring-orange;
+}
+
+/* Submit button */
+.wpcf7 .wpcf7-submit {
+	@apply order-1 mt-3;
+	@apply bg-purple px-4 py-3 text-sm font-display uppercase text-white hover:bg-purple/80 hover:text-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-white/20;
+}
+
+/* Overall error */
+.wpcf7-form.invalid .wpcf7-response-output {
+	@apply text-orange;
+}
+.wpcf7-form.sent .wpcf7-response-output {
+	@apply flex absolute top-0 left-0 w-full h-full;
+}
+
+.wpcf7-form.sent .wpcf7-form-control-wrap,
+.wpcf7-form.sent .wpcf7-form-control,
+.wpcf7-form.sent label {
+	@apply hidden;
+}
+
+/* Screen Reader Only */
+.wpcf7 .screen-reader-response {
+	@apply sr-only;
+}

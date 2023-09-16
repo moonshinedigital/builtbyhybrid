@@ -12,7 +12,7 @@
  */
 function mb_custom_post_type() {
 	register_post_type(
-		'testimonial',
+		'testimonials',
 		array(
 			'labels'            => array(
 				'name'                     => 'Testimonials',
@@ -52,13 +52,13 @@ function mb_custom_post_type() {
 			'public'            => true,
 			'show_in_nav_menus' => true,
 			'show_in_rest'      => true,
-			'menu_position'     => 5,
+			'has_archive'       => true,
+			'menu_position'     => 20,
 			'menu_icon'         => 'dashicons-format-quote',
 			'map_meta_cap'      => true,
 			'supports'          => array(
 				0 => 'title',
 				1 => 'editor',
-				2 => 'thumbnail',
 			),
 			'delete_with_user'  => false,
 		) 

@@ -1,0 +1,15 @@
+.testimonials {
+	@apply flex flex-col-reverse lg:flex-row gap-x-12 items-start container;
+}
+
+.testimonials > div {
+	@apply xl:w-4/6 p-0;
+}
+
+.testimonials aside {
+	@apply xl:w-2/6 rounded-lg overflow-clip;
+}
+
+.testimonials img {
+	@apply p-0 m-0;
+}

@@ -2,12 +2,13 @@
    TYPOGRAPHY
    ========================================================================== */
 
+/* General Text Styles
+   ========================================================================== */
+
 .font-display {
 	@apply font-extrabold italic uppercase;
 }
 
-/* Headings 
-   ========================================================================== */
 h1,
 h2,
 h3,
@@ -32,52 +33,71 @@ h4 {
 	@apply text-purple text-2xl leading-none mb-2;
 }
 
-/* Paragraphs 
+/* Hero Modules
    ========================================================================== */
 
-p {
-	@apply my-4 leading-normal;
-}
-p:first-of-type,
-p:last-of-type {
-	@apply my-0;
+.hero h1 {
+	@apply text-white my-0 text-5xl;
 }
 
-/* Wordpress Specific 
+.hero h2 {
+	@apply text-purple text-3xl mt-2 mb-4;
+}
+
+.hero p {
+	@apply text-white prose lg:prose-lg;
+}
+
+/* Base Modules
    ========================================================================== */
 
-.title {
-	@apply text-4xl font-extrabold italic font-display;
+.module h2,
+.module h3 {
+	@apply !my-0 py-0 leading-tight;
 }
 
-.content {
-	@apply prose lg:prose-lg max-w-none;
+/* If white background */
+
+.base-white {
+	@apply bg-white text-dark;
 }
 
-/* Footer 
-   ========================================================================== */
-
-.copyright {
-	@apply text-sm font-bold;
-}
-.credit {
-	@apply font-display text-sm hover:text-yellow;
+.base-white h2 {
+	@apply text-purple;
 }
 
-/* Section Specific 
-   ========================================================================== */
-
-.section__heading {
-	@apply mt-0 mb-2;
-}
-.section__subheading {
-	@apply my-0 normal-case;
+.base-white h3 {
+	@apply text-dark;
 }
 
-.section__text {
-	@apply my-6;
+/* If black background */
+
+.base-black {
+	@apply bg-black !prose-invert;
 }
 
-.section__text p {
-	@apply my-4;
+.base-black h2 {
+	@apply text-white;
+}
+
+.base-black h3 {
+	@apply text-orange;
+}
+
+/* If purple background */
+
+.base-purple {
+	@apply bg-purple !prose-invert;
+}
+
+.base-purple h2 {
+	@apply text-white;
+}
+
+.base-purple h3 {
+	@apply text-white;
+}
+
+.text li {
+	@apply !my-0;
 }

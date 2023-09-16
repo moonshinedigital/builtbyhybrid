@@ -1,78 +1,86 @@
 /* ==========================================================================
-   HOME HERO
+   HERO MODULE
    ========================================================================== */
 
-.home .hero-container {
-	@apply flex flex-col-reverse xl:flex-row bg-black lg:min-h-[320px] xl:min-h-[640px];
+/* Common (Hero Home, Hero Page) 
+   ========================================================================== */
+
+.hero {
+	@apply relative flex bg-black;
 }
 
-.home .hero-content {
-	@apply flex flex-row items-center z-10 container xl:pr-80 lg:w-full pb-10 xl:py-20;
+.hero-content {
+	@apply flex z-10 w-full items-center px-4;
 }
 
-.home .hero-content-inner {
-	@apply xl:ml-40;
-}
-
-.home .hero-buttons {
+.hero-buttons {
 	@apply mt-6;
 }
 
-.home .hero-image {
-	@apply flex-1 relative z-0 xl:-ml-80;
+.hero-image {
+	@apply flex-1 relative z-0;
 }
 
-.home .hero-image-overlay {
-	@apply flex-1 absolute inset-0 z-0;
-	@apply bg-gradient-to-t xl:bg-gradient-to-r from-black from-[0] via-black/20 via-[20rem] to-black/0 to-[100%];
-}
-
-.home .hero-image img {
+.hero-image img {
 	@apply w-full h-full object-cover;
 }
 
-.home .single .hero-content {
-	@apply flex flex-row items-center text-center z-10 container py-20 xl:p-0 lg:w-3/4;
-}
-
-/* ==========================================================================
-   PAGE HERO
-   ========================================================================== */
-
-.page .hero-container {
-	@apply flex items-center text-center;
-	@apply bg-black h-[320px] relative;
-}
-
-.page .hero-content {
-	@apply absolute z-10 w-full flex flex-col;
-}
-
-.page .hero-image {
-	@apply w-full z-0 h-full;
-}
-
-.page .hero-image img {
-	@apply opacity-20 h-full w-full object-cover;
-}
-
-.page .hero-image-overlay {
+.hero-image-overlay {
 	@apply absolute w-full h-full;
-	@apply bg-gradient-to-t from-purple/20 from-[0] via-black/20 via-[20rem] to-black/0 to-[100%];
 }
 
-/* ==========================================================================
-   TYPOGRAPHY
+/* Hero - Home
    ========================================================================== */
 
-.hero-container h1 {
-	@apply text-white my-0 text-5xl;
+.home .hero {
+	@apply flex-col-reverse xl:flex-row lg:min-h-[320px] xl:min-h-[640px];
 }
 
-.hero-container h2 {
-	@apply text-purple text-3xl mt-2 mb-4;
+.home .hero-content {
+	@apply flex-row container pb-10 xl:py-20 xl:pr-80;
 }
 
-.hero-container p {
-	@apply text-white prose lg:prose-lg;
+.home .hero-content > div {
+	@apply xl:ml-40;
+}
+
+.home .hero-image {
+	@apply xl:-ml-80;
+}
+
+.home .hero-image-overlay {
+	@apply bg-gradient-to-t xl:bg-gradient-to-r from-black from-[0] via-black/20 via-[20rem] to-black/0 to-[100%];
+}
+
+/* Hero - Page
+   ========================================================================== */
+
+.page .hero,
+.archive .hero,
+.testimonials-template-default .hero {
+	@apply flex items-center text-center h-[320px];
+}
+
+.page .hero-content,
+.archive .hero-content,
+.testimonials-template-default .hero-content {
+	@apply flex-col absolute py-20;
+}
+
+.page .hero-image,
+.archive .hero-image,
+.testimonials-template-default .hero-image {
+	@apply w-full h-full;
+}
+
+.page .hero-image img,
+.archive .hero-image img,
+.testimonials-template-default .hero-image img {
+	@apply opacity-20;
+}
+
+.page .hero-image-overlay,
+.archive .hero-image-overlay,
+.testimonials-template-default .hero-image-overlay {
+	@apply bg-gradient-to-t from-purple/20 from-[0] via-black/20 via-[20rem] to-black/0 to-[100%];
 }

@@ -13,7 +13,7 @@ $image      = get_field( 'image' );
 ?>
 
 <?php if ( ! empty( $heading ) ) : ?>
-	<div class="hero-container <?php echo esc_attr( $hero_container_class ); ?>">
+	<section class="hero">
 		<div class="hero-content">
 				<?php if ( ! empty( $heading ) ) : ?>
 					<h1><?php echo esc_html( $heading ); ?></h1>
@@ -30,5 +30,5 @@ $image      = get_field( 'image' );
 				<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" width="720">
 			</div>
 		<?php endif; ?>
-	</div>
+	</section>
 <?php endif; ?>

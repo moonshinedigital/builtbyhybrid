@@ -54,7 +54,7 @@
 			</svg>
 		</button>
 
-		<div class="flex-1 font-display font-semibold uppercase leading-6 text-black">
+		<div class="flex-1 font-display font-semibold uppercase leading-6 text-dark">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 		</div>
 	</div>

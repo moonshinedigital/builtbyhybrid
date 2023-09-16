@@ -9,19 +9,13 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<?php the_title( '<h2 class="title">', '</h2>' ); ?>
-
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'prose lg:prose-lg' ); ?>>
 		<?php the_post_thumbnail(); ?>
 
-		<?php
-		the_content(
-			sprintf(
-				'Continue reading<span class="sr-only"> "%s"</span>',
-				get_the_title()
-			)
-		);
+		<?php the_title( '<h2>', '</h2>' ); ?>
+
+		<?php 
+		the_content();
 
 		wp_link_pages(
 			array(
@@ -30,5 +24,4 @@
 			)
 		);
 		?>
-
 </article>

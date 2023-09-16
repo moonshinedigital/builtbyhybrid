@@ -1,7 +1,8 @@
 /* ==========================================================================
-   ACCESSABILITY
+   UTILITIES
    ========================================================================== */
 
-.screen-reader-text {
-	@apply sr-only;
+/* Hide on mobile */
+.hide {
+	@apply hidden lg:flex;
 }

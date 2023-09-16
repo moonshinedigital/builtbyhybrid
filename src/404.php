@@ -10,18 +10,12 @@
 get_header();
 ?>
 
-<section>
-
-	<div class="page-header">
-		<h1 class="page-title"><?php esc_html( 'Page Not Found' ); ?></h1>
-	</div>
-
-	<div class="page-content">
-		<p><?php esc_html( 'This page could not be found. It might have been removed or renamed, or it may never have existed.' ); ?>
-		</p>
-		<?php get_search_form(); ?>
-	</div>
-</section>
+	<section>
+		<article class="prose lg:prose-lg">
+			<h1>Page Not Found</h1>
+			<p>This page could not be found. It might have been removed or renamed, or it may never have existed.</p>
+		</article>
+	</section>
 
 <?php
 get_footer();

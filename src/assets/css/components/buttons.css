@@ -6,7 +6,7 @@
    ========================================================================== */
 
 .button {
-	@apply rounded-md bg-yellow px-4 py-3 text-sm font-display uppercase text-black hover:bg-purple hover:text-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-white/20;
+	@apply rounded-md bg-orange px-4 py-3 text-sm font-display uppercase text-white hover:bg-purple hover:text-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-white/20;
 	@apply inline-flex items-center gap-x-3;
 }
 .button svg {
@@ -17,30 +17,37 @@
    ========================================================================== */
 
 .cta {
-	@apply max-w-xs inline-flex;
+	@apply inline-flex;
+	/* @apply max-w-xs; */
 	@apply transition-colors duration-300;
 }
 
-.cta__label {
+.cta .label {
 	@apply font-display uppercase font-extrabold border-l-2 border-b-2 leading-none;
 	@apply pb-2 pl-2;
 }
 
-.cta__icon {
+.cta .icon {
 	@apply h-[14px] m-0 p-0 inline-block;
 }
 
-.section--white .cta {
+a.cta {
+	@apply no-underline;
+}
+
+/* WITHIN MODULES */
+
+.base-white .cta {
 	@apply text-purple;
-	@apply hover:text-yellow;
+	@apply hover:text-orange;
 }
 
-.section--black .cta {
+.base-black .cta {
 	@apply text-white;
-	@apply hover:text-yellow;
+	@apply hover:text-orange;
 }
 
-.section--purple .cta {
-	@apply text-yellow;
-	@apply hover:text-white;
+.base-purple .cta {
+	@apply text-white;
+	@apply hover:text-white/40;
 }

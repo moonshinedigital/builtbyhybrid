@@ -1,0 +1,24 @@
+/* ==========================================================================
+   LOGO MODULE
+   ========================================================================== */
+
+.logos {
+	/* @apply prose; */
+	/* @apply my-0; */
+}
+
+.hide.logos {
+	@apply flex-col;
+}
+
+.logos h2 {
+	@apply text-center text-grey text-lg !mb-8;
+}
+
+.logos > div {
+	@apply flex flex-wrap justify-center gap-8 lg:gap-12;
+}
+
+.logos img {
+	@apply w-32 max-h-[6rem] object-contain p-0 m-0;
+}
