@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/post-types/
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 /**

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 get_header();

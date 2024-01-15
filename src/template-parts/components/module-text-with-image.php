@@ -2,7 +2,7 @@
 /**
  * Component Name: Section with Text and Image
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 $heading    = get_sub_field( 'heading' );

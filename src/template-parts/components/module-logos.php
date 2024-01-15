@@ -2,7 +2,7 @@
 /**
  * Component Name: Logo Module
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 $heading    = get_sub_field( 'heading' );

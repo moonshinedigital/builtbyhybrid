@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 if ( ! function_exists( 'mb_setup' ) ) {

@@ -2,7 +2,7 @@
 /**
  * Component Name: Section with Text and Contact Form
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 $heading    = get_sub_field( 'heading' );

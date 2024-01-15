@@ -2,7 +2,7 @@
 /**
  * Template Name: Home
  *
- * @package BuiltByHybrid
+ * @package builtbyhybrid
  */
 
 get_header();
