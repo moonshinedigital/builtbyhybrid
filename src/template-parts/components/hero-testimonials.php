@@ -12,7 +12,7 @@
 	<section class="hero">
 		<div class="hero-content">
 					<h1>Testimonials</h1>
-					<h2>What the demons say</h2>
+					<h2>What clients are saying</h2>
 		</div>
 
 			<div class="hero-image">
