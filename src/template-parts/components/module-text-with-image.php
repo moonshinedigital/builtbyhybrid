@@ -2,7 +2,7 @@
 /**
  * Component Name: Section with Text and Image
  *
- * @package Moonbase
+ * @package BuiltByHybrid
  */
 
 $heading    = get_sub_field( 'heading' );

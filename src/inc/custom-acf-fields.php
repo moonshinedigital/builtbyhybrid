@@ -2,7 +2,7 @@
 /**
  * Additional functions which enhance the theme by hooking into WordPress
  *
- * @package Moonbase
+ * @package BuiltByHybrid
  */
 
 add_action(

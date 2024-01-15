@@ -2,7 +2,7 @@
 /**
  * Component Name: Logo Module
  *
- * @package Moonbase
+ * @package BuiltByHybrid
  */
 
 $heading    = get_sub_field( 'heading' );

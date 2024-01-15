@@ -8,7 +8,7 @@ footer {
 
 footer .background {
 	@apply h-full w-full absolute top-0 opacity-40 -z-10;
-	@apply bg-[url('/app/themes/moonbase/assets/images/fitness-001.jpg')] bg-cover;
+	@apply bg-[url('/app/themes/builtbyhybrid/assets/images/fitness-001.jpg')] bg-cover;
 }
 
 .footer-top {

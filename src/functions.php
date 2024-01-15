@@ -1,10 +1,10 @@
 <?php
 /**
- * Moonbase functions and definitions
+ * Functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Moonbase
+ * @package BuiltByHybrid
  */
 
 if ( ! function_exists( 'mb_setup' ) ) {

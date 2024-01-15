@@ -43,4 +43,4 @@ jobs:
                   remote-user: ${{ secrets.USERNAME }}
                   ssh-private-key: ${{ secrets.KEY }}
                   local-path: ${{ github.workspace }}/build/
-                  remote-path: '/public_html/app/themes/moonbase'
+                  remote-path: '/public_html/app/themes/builtbyhybrid'

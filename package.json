@@ -1,6 +1,6 @@
 {
-	"name": "moonbase",
-	"version": "1.0.0",
+	"name": "builtbyhybrid",
+	"version": "1.1.0",
 	"devDependencies": {
 		"@angular-eslint/template-parser": "^16.1.1",
 		"@tailwindcss/forms": "^0.5.6",
@@ -30,7 +30,7 @@
 		"build:js": "esbuild ./src/assets/js/main.js --outdir=./build/assets/js --out-extension:.js=.min.js --bundle --minify",
 		"build:other": "rsync -av --delete --exclude assets/js/ --exclude assets/css/ src/ build/",
 		"build": "run-s build:css build:js build:other",
-		"package": "node node_scripts/theme-packager.js moonbase.zip moonbase"
+		"package": "node node_scripts/theme-packager.js builtbyhybrid.zip builtbyhybrid"
 	},
 	"prettier": "@wordpress/prettier-config"
 }

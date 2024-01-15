@@ -2,7 +2,7 @@
 /**
  * Template Name: Home
  *
- * @package Moonbase
+ * @package BuiltByHybrid
  */
 
 get_header();

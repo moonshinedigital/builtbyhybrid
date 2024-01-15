@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/plugins/metadata/custom-meta-boxes/
  *
- * @package Moonbase
+ * @package BuiltByHybrid
  */
 
 register_nav_menus(

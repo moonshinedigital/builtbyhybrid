@@ -14,7 +14,7 @@ Based on Moonbase, the Moonshine WordPress theme intended to be used as a base t
 
 ### Requirements
 
-`moonbase` requires the following dependencies:
+`builtbyhybrid` requires the following dependencies:
 
 - [Node.js](https://nodejs.org/)
 - [Composer](https://getcomposer.org/)
