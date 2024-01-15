@@ -1,10 +1,6 @@
-# Moonbase Wordpress Theme
+# Built By Hybrid WP Theme
 
-- `cd into app/public/app/themes` and create a symlink.
-- `ln -s ~/Developer/projectname/build projectname`
-- Will create a symlink called `projectname` within the themes directory that connects to the project `build` directory.
-
-Ultra-minimal WordPress theme intended to be used as a base theme for client websites:
+Based on Moonbase, the Moonshine WordPress theme intended to be used as a base theme for client websites:
 
 - Smartly organized starter CSS using Tailwind, with automatic bundling via `eslint`.
 - Lean, well-commented, modern, HTML5 templates.
@@ -25,22 +21,11 @@ Ultra-minimal WordPress theme intended to be used as a base theme for client web
 
 ### Quick Start
 
-Clone or download this repository, change its name to something else, and then you'll need to also run and search and replace for the `mb` prefix, changing it to your own.
+Clone or download this repository.
 
-### Setup
-
-To start using all the tools that come with `moonbase` you need to install the necessary Node.js and Composer dependencies :
-
-```sh
-composer install
-npm install
-```
 
 ### Available CLI commands
 
-- `composer lint:php` : checks all PHP files for syntax errors.
-- `composer make-pot` : generates a .pot file in the `languages/` directory.
-- `npm run start` : watches all style and javascript files and recompiles them when they change.
-- `npm run lint` : checks all files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/) and [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run dev` : builds and minifies all development files into the `theme` directory for buildribution.
-- `npm run bundle` : generates a .zip archive for buildribution, excluding development and system files.
+- `npm run lint` : checks all PHP files for syntax errors.
+- `npm run build` : builds and minifies all development files into the `build` directory for build distribution.
+- `npm run package` : generates a .zip archive for build distribution, excluding development and system files.
