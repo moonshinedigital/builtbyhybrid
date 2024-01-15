@@ -16,7 +16,7 @@
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
 			<?php echo file_get_contents( get_template_directory() . '/assets/images/logo.svg' ); ?>
 		</a>
-		<span class="description"><?php echo get_bloginfo( 'description' ); ?></span>
+		<span class="description sr-only"><?php echo get_bloginfo( 'description' ); ?></span>
 	</div>
 
 	<ul role="list">
