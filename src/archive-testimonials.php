@@ -21,11 +21,11 @@ if ( have_posts() ) :
 		?>
 
 		<?php if ( ! empty( $image ) ) : ?>
-			<section class="container bg-black text-white my-16 xl:my-24">
-				<div class="flex flex-col lg:flex-row justify-start items-center">
+			<section class="container my-16 bg-black text-white xl:my-24">
+				<div class="flex flex-col items-center justify-start lg:flex-row">
 
-				<div class="lg:w-4/6 p-8 xl:p-12 flex flex-col gap-8">
-					<h2 class="text-orange mb-0 text-3xl"><?php the_title( 'From ', '' ); ?></h2>
+				<div class="flex flex-col gap-8 p-8 lg:w-4/6 xl:p-12">
+					<h2 class="mb-0 text-3xl text-orange"><?php the_title( 'From ', '' ); ?></h2>
 					<blockquote class="text-2xl italic">
 					"<?php the_field( 'quote' ); ?>..."
 					</blockquote>
@@ -38,18 +38,18 @@ if ( have_posts() ) :
 					</a>
 				</div>
 
-				<div class="lg:w-2/6 flex">
+				<div class="flex lg:w-2/6">
 					<img class="object-cover" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
 				</div>
 
 				</div>
 			</section>
 		<?php else : ?>
-			<section class="container bg-black text-white my-16 xl:my-24">
+			<section class="container my-16 bg-black text-white xl:my-24">
 				<div class="flex items-center">
 
-				<div class="w-full p-8 xl:p-12 flex flex-col gap-8">
-					<h2 class="text-orange mb-0 text-3xl"><?php the_title( 'From ', '' ); ?></h2>
+				<div class="flex w-full flex-col gap-8 p-8 xl:p-12">
+					<h2 class="mb-0 text-3xl text-orange"><?php the_title( 'From ', '' ); ?></h2>
 					<blockquote class="text-2xl italic">
 					"<?php the_field( 'quote' ); ?>..."
 					</blockquote>
