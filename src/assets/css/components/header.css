@@ -33,7 +33,7 @@
 }
 
 #menu-content .logo svg {
-	@apply h-[78px] w-[190px];
+	@apply h-[140px] w-[190px];
 }
 
 #menu-content .description {

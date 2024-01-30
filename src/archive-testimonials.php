@@ -25,7 +25,7 @@ if ( have_posts() ) :
 				<div class="flex flex-col items-center justify-start lg:flex-row">
 
 				<div class="flex flex-col gap-8 p-8 lg:w-4/6 xl:p-12">
-					<h2 class="mb-0 text-3xl text-orange"><?php the_title( '', '' ); ?></h2>
+					<h2 class="mb-0 text-3xl text-purple"><?php the_title( '', '' ); ?></h2>
 					<blockquote class="text-2xl italic">
 					"<?php the_field( 'quote' ); ?>..."
 					</blockquote>
@@ -49,7 +49,7 @@ if ( have_posts() ) :
 				<div class="flex items-center">
 
 				<div class="flex w-full flex-col gap-8 p-8 xl:p-12">
-					<h2 class="mb-0 text-3xl text-orange"><?php the_title( '', '' ); ?></h2>
+					<h2 class="mb-0 text-3xl text-purple"><?php the_title( '', '' ); ?></h2>
 					<blockquote class="text-2xl italic">
 					"<?php the_field( 'quote' ); ?>..."
 					</blockquote>

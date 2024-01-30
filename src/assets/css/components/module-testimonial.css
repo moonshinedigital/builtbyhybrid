@@ -3,11 +3,7 @@
 }
 
 .testimonials > div {
-	@apply xl:w-4/6 p-0;
-}
-
-.testimonials aside {
-	@apply xl:w-2/6 rounded-lg overflow-clip;
+	@apply xl:w-4/6 p-0 mx-auto;
 }
 
 .testimonials img {
